@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./TodoForm.css";
 
-function TodoForm(props) {
-    const { addTodo } = props;
+function TodoForm({addTodo} ) {
+    // const { addTodo } = props; replaced props in todo form made it its own 'prop' 
     const [value, setValue] = useState("");
 
     const handleSubmit = (event) => {
